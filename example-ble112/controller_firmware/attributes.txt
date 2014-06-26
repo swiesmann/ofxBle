@@ -1,0 +1,3 @@
+xgatt_battery 13
+hid_input 16
+hid_control 24

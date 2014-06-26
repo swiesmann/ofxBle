@@ -1,0 +1,37 @@
+# ================================================================
+# BGScript demo: HID-over-GATT mouse
+# ----------------------------------------------------------------
+#
+# CHANGELOG:
+#   2013-09-09 - Initial release
+#
+# ================================================================
+
+dim tmp(3)      # buffer for building attribute value
+
+event system_boot(major, minor, patch, build, ll_version, protocol, hw)
+    # start advertising in connectable mode
+    call gap_set_mode(gap_general_discoverable, gap_undirected_connectable)
+    
+    # timer to move mouse cursor horizontally every 50ms (use P0_6 potentiometer on DKBLE11x board)
+    call hardware_set_soft_timer(1638, 0, 0)
+	call sm_set_bondable_mode(1)
+end
+
+event hardware_soft_timer(handle)
+    # measure potentiometer
+    #call hardware_adc_read(6, 1, 2)
+    call hardware_adc_read(1, 1, 2)
+end
+
+event hardware_adc_result(input, value)
+    tmp(0:1) = 0 # buttons
+	tmp(1:1) = value / 160 - 100 # x-axis
+	tmp(2:1) = 0 # y-axis
+    call attributes_write(hid_input, 0, 3, tmp(0:3))
+end
+
+event connection_disconnected(handle, result)
+    # start advertising again after disconnection
+    call gap_set_mode(gap_general_discoverable, gap_undirected_connectable)
+end

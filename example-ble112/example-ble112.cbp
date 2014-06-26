@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="example-ble112" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="libs/addons/;libs/addons/ofxBle/;libs/;libs/ble112/;libs/ble112/src/;build config/;src/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/$(PROJECT_NAME)_debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/linux64/libopenFrameworksDebug.a;" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_compiler_c11" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add directory="example-ble112/src" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/linux64/libopenFrameworks.a;" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_compiler_c11" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add directory="example-ble112/src" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="../libs/ble112/src/apitypes.h">
+			<Option virtualFolder="libs/ble112/src/" />
+		</Unit>
+		<Unit filename="../libs/ble112/src/cmd_def.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="libs/ble112/src/" />
+		</Unit>
+		<Unit filename="../libs/ble112/src/cmd_def.h">
+			<Option virtualFolder="libs/ble112/src/" />
+		</Unit>
+		<Unit filename="../libs/ble112/src/commands.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="libs/ble112/src/" />
+		</Unit>
+		<Unit filename="../libs/ble112/src/config.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="libs/ble112/src/" />
+		</Unit>
+		<Unit filename="../libs/ble112/src/config.h">
+			<Option virtualFolder="libs/ble112/src/" />
+		</Unit>
+		<Unit filename="../libs/ble112/src/utils.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="libs/ble112/src/" />
+		</Unit>
+		<Unit filename="../libs/ble112/src/utils.h">
+			<Option virtualFolder="libs/ble112/src/" />
+		</Unit>
+		<Unit filename="../src/ofxBle.cpp">
+			<Option virtualFolder="libs/addons/ofxBle/" />
+		</Unit>
+		<Unit filename="../src/ofxBle.h">
+			<Option virtualFolder="libs/addons/ofxBle/" />
+		</Unit>
+		<Unit filename="../src/ofxBleAcceleratorEvent.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="../src/ofxBleAcceleratorEvent.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="../src/ofxBle_linux_ble112.h">
+			<Option virtualFolder="libs/addons/ofxBle/" />
+		</Unit>
+		<Unit filename="../src/simpleserial.cpp">
+			<Option virtualFolder="libs/addons/ofxBle/" />
+		</Unit>
+		<Unit filename="../src/simpleserial.h">
+			<Option virtualFolder="libs/addons/ofxBle/" />
+		</Unit>
+		<Unit filename="config.make">
+			<Option virtualFolder="build config" />
+		</Unit>
+		<Unit filename="src/Particle.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/Particle.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/ship.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/ship.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/testApp.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/testApp.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="example-ble112">
+		<Project filename="example-ble112.cbp">
+			<Depends filename="../../../libs/openFrameworksCompiled/project/linux64/libopenFrameworks.cbp" />
+		</Project>
+		<Project filename="../../../libs/openFrameworksCompiled/project/linux64/libopenFrameworks.cbp" />
+		<Project filename="../../../../MaThe/cb_workspace/ble_bench/ble_bench.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
